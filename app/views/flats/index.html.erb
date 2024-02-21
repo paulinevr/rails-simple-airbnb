@@ -1,0 +1,11 @@
+<div class=”container mt-5”>
+  <h1>🦋 Flats 🦋</h1>
+
+    <% @flats.each do |flat| %>
+      <h2><%= link_to flat.name, flat %></h2>
+        <p><%= flat.description %></p>
+        <p><%= flat.price_per_night %>€</p>
+      <p><%= flat.number_of_guests %></p>
+    <% end %>
+  </div>
+</div>
